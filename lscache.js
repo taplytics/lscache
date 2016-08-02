@@ -19,10 +19,7 @@
 /* global define */
 
 (function (root, factory) {
-    if (typeof define === 'function' && define.amd) {
-        // AMD. Register as an anonymous module.
-        define([], factory);
-    } else if (typeof module !== "undefined" && module.exports) {
+    if (typeof module !== "undefined" && module.exports) {
         // CommonJS/Node module
         module.exports = factory();
     } else {
